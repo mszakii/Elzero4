@@ -1,0 +1,73 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Page */
+.page {
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+.page .sidebar {
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.page .sidebar h3 {
+  height: 50px;
+  width: 210px;
+}
+
+.page .sidebar h3::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: #000;
+  bottom: 0;
+  left: 55px;
+}
+
+.page .sidebar h3::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  bottom: -7px;
+  left: 97px;
+  border: 3px solid white;
+}
+
+.page nav a {
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.page nav a.active {
+  background: #f6f6f6;
+}
+
+.page nav a:hover {
+  background: #f6f6f6;
+}
