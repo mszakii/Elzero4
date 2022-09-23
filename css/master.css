@@ -34,7 +34,7 @@ a {
 
 .page .sidebar h3 {
   height: 50px;
-  width: 210px;
+  /* width: 210px; */
 }
 
 .page .sidebar h3::before {
@@ -70,4 +70,38 @@ a {
 
 .page nav a:hover {
   background: #f6f6f6;
+}
+
+@media (max-width: 767px) {
+  .page .sidebar {
+    width: 67px;
+    padding: 10px;
+  }
+
+  .page .sidebar h3 {
+    font-size: 9px;
+    height: 25px;
+  }
+
+  .page .sidebar h3::before {
+    width: 35px;
+    height: 2px;
+    left: 6px;
+  }
+
+  .page .sidebar h3::after {
+    width: 4px;
+    height: 4px;
+    bottom: -2px;
+    left: 20px;
+    border: 1px solid white;
+  }
+
+  .page .sidebar nav {
+    align-items: center;
+  }
+
+  .page .sidebar nav a span {
+    display: none;
+  }
 }
