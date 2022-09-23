@@ -34,7 +34,7 @@ a {
 
 .page .sidebar h3 {
   height: 50px;
-  /* width: 210px; */
+  width: 210px;
 }
 
 .page .sidebar h3::before {
@@ -81,6 +81,7 @@ a {
   .page .sidebar h3 {
     font-size: 9px;
     height: 25px;
+    width: 46px;
   }
 
   .page .sidebar h3::before {
@@ -104,4 +105,35 @@ a {
   .page .sidebar nav a span {
     display: none;
   }
+}
+
+/* content */
+.content header {
+  box-shadow: 7px 0 5px #ddd;
+}
+
+.content header .icons {
+  justify-content: space-between;
+  width: 65px;
+}
+
+.content header img {
+  width: 30px;
+  height: 30px;
+}
+
+.content .search::before {
+  font-family: var(--fa-style-family-classic, "Font Awesome 6 Free");
+  content: "\f002";
+  position: absolute;
+  font-weight: 900;
+  transform: translate(0, -50%);
+  top: 50%;
+  left: 10px;
+}
+
+.content header .search input {
+  border-radius: 12px;
+  border: 2px solid #eee;
+  padding: 10px 10px 10px 35px;
 }

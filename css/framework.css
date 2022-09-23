@@ -8,12 +8,18 @@
   align-content: center;
 }
 
-.align-items-center {
+.items-center {
   align-items: center;
 }
 
 .fd-column {
   flex-direction: column;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Background */
@@ -22,12 +28,16 @@
 }
 
 /* Padding & Margins */
-.p-20 {
-  padding: 20px;
-}
-
 .p-10 {
   padding: 10px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.p-20 {
+  padding: 20px;
 }
 
 .m-20 {
@@ -59,4 +69,9 @@
 /* Border radius */
 .r-6 {
   border-radius: 6px;
+}
+
+/* width and height */
+.w-full {
+  width: 100%;
 }
