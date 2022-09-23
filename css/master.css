@@ -137,3 +137,16 @@ a {
   border: 2px solid #eee;
   padding: 10px 10px 10px 35px;
 }
+
+@media (max-width: 767px) {
+  .content .search::before {
+    font-size: 10px;
+    top: 57%;
+  }
+  .content .search input {
+    padding: 5px 5px 5px 20px !important;
+    font-size: 12px;
+    border-radius: 10px !important;
+    max-width: 120px;
+  }
+}
