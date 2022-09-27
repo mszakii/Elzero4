@@ -1,6 +1,30 @@
+/* variables */
+:root {
+  --blue: #0075ff;
+  --blue-alt: #0d69d5;
+  --orange: #f59e0b;
+  --green: #22c55e;
+  --red: #f44336;
+  --grey: #888;
+}
+
 /* Display */
 .d-flex {
   display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .mobile-block {
+    display: block;
+  }
 }
 
 /* Flex */
@@ -10,6 +34,10 @@
 
 .items-center {
   align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .fd-column {
@@ -27,6 +55,19 @@
   background: white;
 }
 
+.bg-eee {
+  background: #eee;
+}
+
+/* color */
+.c-black {
+  color: #000;
+}
+
+.c-grey {
+  color: var(--grey);
+}
+
 /* Padding & Margins */
 .p-10 {
   padding: 10px;
@@ -38,6 +79,10 @@
 
 .p-20 {
   padding: 20px;
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .m-20 {
@@ -69,6 +114,10 @@
 /* Border radius */
 .r-6 {
   border-radius: 6px;
+}
+
+.r-10 {
+  border-radius: 10px;
 }
 
 /* width and height */

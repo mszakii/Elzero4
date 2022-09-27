@@ -21,6 +21,23 @@ a {
   color: #000;
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-alt);
+}
+
 /* Page */
 .page {
   min-height: 100vh;
@@ -60,7 +77,7 @@ a {
 }
 
 .page nav a {
-  transition: 0.3s;
+  transition: 0.3s background;
   margin-bottom: 10px;
 }
 
@@ -82,6 +99,7 @@ a {
     font-size: 9px;
     height: 25px;
     width: 46px;
+    margin-top: 10px;
   }
 
   .page .sidebar h3::before {
@@ -139,6 +157,19 @@ a {
 }
 
 @media (max-width: 767px) {
+  .content header img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fa-bell {
+    font-size: 20px;
+  }
+
+  .content header .icons {
+    width: 50px;
+  }
+
   .content .search::before {
     font-size: 10px;
     top: 57%;
@@ -149,4 +180,20 @@ a {
     border-radius: 10px !important;
     max-width: 120px;
   }
+}
+
+.content .dashboard h1::before,
+.content .dashboard h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  width: 120px;
+  height: 3px;
+  background: #fff;
+}
+
+.content .dashboard h1::after {
+  width: 50px;
+  background: #000;
 }
